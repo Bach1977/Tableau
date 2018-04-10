@@ -1,0 +1,2834 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9200.16.0204.1543                                -->
+<workbook source-platform='win' version='9.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='JC-201712-citibike-tripdata' inline='true' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' version='9.2'>
+      <connection class='textscan' directory='C:/Users/wb421558/Desktop' filename='JC-201712-citibike-tripdata.csv' password='' server='' username=''>
+        <relation name='JC-201712-citibike-tripdata#csv' table='[JC-201712-citibike-tripdata#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>tripduration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tripduration]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>tripduration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>starttime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[starttime]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>starttime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stoptime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[stoptime]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>stoptime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start station id]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>start station id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start station name]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>start station name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station latitude]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>start station latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station longitude]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>start station longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[end station id]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>end station id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end station name]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>end station name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station latitude]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>end station latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station longitude]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>end station longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth year]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>birth year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[JC-201712-citibike-tripdata#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='trip Growth rate' datatype='real' name='[Calculation_114278893427503105]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(ZN(COUNT([bikeid])) - LOOKUP(ZN(COUNT([bikeid])), -1)) / ABS(LOOKUP(ZN(COUNT([bikeid])), -1))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Index' datatype='integer' name='[Calculation_799107513446076417]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='Index()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='gender' datatype='string' name='[Calculation_799107513458900996]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [gender] = 1 Then &quot;Male&quot;&#13;&#10;ELSEIF [gender] = 2 Then &quot;Female&quot;&#13;&#10;ELSE &quot;Unknowm&quot; END' />
+      </column>
+      <column caption='([End Station Longitude])' datatype='real' name='[Calculation_799107513506811910]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([end station longitude])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+      <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+      <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='ordinal' />
+      <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Start Station Name' datatype='string' name='[start station name]' role='dimension' type='nominal' />
+      <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+      <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+      <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\wb421558\Documents\My Tableau Repository\Datasources\JC-201712-citibike-tripdata.tde' schema='Extract' tablename='Extract' update-time='04/09/2018 09:08:55 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Calculation_799107513458900996]' formula='if [gender] = 1 Then &quot;Male&quot;&#13;&#10;ELSEIF [gender] = 2 Then &quot;Female&quot;&#13;&#10;ELSE &quot;Unknowm&quot; END' />
+            <calculation column='[Calculation_799107513506811910]' formula='([end station longitude])' />
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='176563' timestamp-start='2018-04-09 21:08:55.827' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Calculation_799107513506811910</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Calculation_799107513506811910]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_799107513506811910</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>110</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>-74.096936600000006</statistic>
+                <statistic aggregation='Max' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>2</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>842</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>14529</statistic>
+                <statistic aggregation='Max' datatype='integer'>33463</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birth year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[birth year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birth year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1887</statistic>
+                <statistic aggregation='Max' datatype='integer'>2001</statistic>
+                <statistic aggregation='Count' datatype='integer'>165095</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station id</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[end station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>79</statistic>
+                <statistic aggregation='Max' datatype='integer'>3640</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>110</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>40.8013434</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>110</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>-74.096936600000006</statistic>
+                <statistic aggregation='Max' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station name</remote-alias>
+              <ordinal>7</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;11 Ave &amp; W 41 St&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;York St&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>201824.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.1430707452863851</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>2</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.51171353063684433</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.51171208153863246</statistic>
+                <statistic aggregation='Var' datatype='real'>0.26185073743682463</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.26184925439259998</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>276932.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station id</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[start station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station id</remote-alias>
+              <ordinal>9</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>3183</statistic>
+                <statistic aggregation='Max' datatype='integer'>3640</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station latitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>40.692639970000002</statistic>
+                <statistic aggregation='Max' datatype='real'>40.752558999999998</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station longitude</remote-alias>
+              <ordinal>11</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>-74.096936600000006</statistic>
+                <statistic aggregation='Max' datatype='real'>-74.032108199999996</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>55</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;5 Corners Library&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;York St&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>starttime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[starttime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>starttime</remote-alias>
+              <ordinal>13</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>102257</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='datetime'>#2017-07-01 00:00:00#</statistic>
+                <statistic aggregation='Max' datatype='datetime'>#2017-12-31 23:33:00#</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+                <statistic aggregation='Median' datatype='datetime'>#2017-09-18 18:34:00#</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stoptime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[stoptime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stoptime</remote-alias>
+              <ordinal>14</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>102487</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='datetime'>#2017-07-01 00:05:00#</statistic>
+                <statistic aggregation='Max' datatype='datetime'>#2017-12-31 23:40:00#</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tripduration</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[tripduration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tripduration</remote-alias>
+              <ordinal>15</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4756</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>61</statistic>
+                <statistic aggregation='Max' datatype='integer'>2181628</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>16</ordinal>
+              <family>JC-201712-citibike-tripdata#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Customer&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Subscriber&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calculation_799107513458900996</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Calculation_799107513458900996]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_799107513458900996</remote-alias>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>7</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Female&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Unknowm&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>176563</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>28</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.474453' measure-ordering='alphabetic' measure-percentage='0.525547' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <sort class='manual' column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Bot 10 Start'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='Index' datatype='integer' name='[Calculation_799107513446076417]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='Index()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station id]' derivation='Count' name='[cnt:start station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station name]' derivation='None' name='[none:start station name:nk]' pivot='key' type='nominal' />
+            <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+            <column caption='Start Station Name' datatype='string' name='[start station name]' role='dimension' type='nominal' />
+            <column-instance column='[start station id]' derivation='Sum' name='[sum:start station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_799107513446076417]' derivation='User' name='[usr:Calculation_799107513446076417:ok:4]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Field'>
+                <order field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[start station name]' />
+                <sort direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <sort class='computed' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]' direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:start station id:qk]' />
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:4]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='46' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='47' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='48' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='49' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='50' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='51' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='52' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='53' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='54' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='55' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:4]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' palette='tableau-green-light' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:start station id:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Bot 10 end'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='Index' datatype='integer' name='[Calculation_799107513446076417]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='Index()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[end station id]' derivation='Count' name='[cnt:end station id:qk]' pivot='key' type='quantitative' />
+            <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+            <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+            <column-instance column='[end station name]' derivation='None' name='[none:end station name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[end station id]' derivation='Sum' name='[sum:end station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_799107513446076417]' derivation='User' name='[usr:Calculation_799107513446076417:ok:2]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <sort class='computed' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:end station name:nk]' direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:end station id:qk]' />
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:2]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='102' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='103' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='104' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='105' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='106' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='107' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='108' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='109' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='110' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='111' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' palette='tableau-green-light' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:end station id:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:end station name:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Breakdown Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='gender' datatype='string' name='[Calculation_799107513458900996]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [gender] = 1 Then &quot;Male&quot;&#13;&#10;ELSEIF [gender] = 2 Then &quot;Female&quot;&#13;&#10;ELSE &quot;Unknowm&quot; END' />
+            </column>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='ordinal' />
+            <column-instance column='[Calculation_799107513458900996]' derivation='None' name='[none:Calculation_799107513458900996:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[pcto:cnt:bikeid:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='371' />
+            <format attr='width' value='491' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:Calculation_799107513458900996:nk]' />
+              <size column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[pcto:cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5492265224456787' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <percentages enabled='true' mode='column' />
+      </table>
+    </worksheet>
+    <worksheet name='Duration_age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column-instance column='[tripduration]' derivation='Avg' name='[avg:tripduration:qk]' pivot='key' type='quantitative' />
+            <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+            <column-instance column='[birth year]' derivation='None' name='[none:birth year:qk]' pivot='key' type='quantitative' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:birth year:qk]' included-values='in-range'>
+            <min>1930</min>
+            <max>2001</max>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:birth year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='277' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[avg:tripduration:qk]' palette='tableau-red-white-black' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[avg:tripduration:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[avg:tripduration:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:birth year:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Evolution of Usage by '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='trip Growth rate' datatype='real' name='[Calculation_114278893427503105]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(COUNT([bikeid])) - LOOKUP(ZN(COUNT([bikeid])), -1)) / ABS(LOOKUP(ZN(COUNT([bikeid])), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[pcdf:cnt:bikeid:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_114278893427503105]' derivation='User' name='[usr:Calculation_114278893427503105:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[starttime]' derivation='Year' name='[yr:starttime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:usertype:nk]' member='&quot;Customer&quot;' />
+              <groupfilter function='member' level='[none:usertype:nk]' member='&quot;Subscriber&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]' scope='rows' value='Trip Growth Rate' />
+            <format attr='subtitle' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='172' />
+            <format attr='width' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]' value='122' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[pcdf:cnt:bikeid:qk]' />
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]</rows>
+        <cols>([textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok] / [textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Map Start Stations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station latitude]' derivation='None' name='[none:start station latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station longitude]' derivation='None' name='[none:start station longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Sum' name='[sum:bikeid:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station longitude:qk]' field-type='quantitative' max='-8227971.9642269593' min='-8248026.3377032373' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station latitude:qk]' field-type='quantitative' max='4977203.9613394495' min='4966203.7861307636' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' palette='tableau-orange-blue' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' />
+              <size column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station latitude:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station longitude:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Map Start by Month '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start station latitude]' derivation='None' name='[none:start station latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station longitude]' derivation='None' name='[none:start station longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Sum' name='[sum:bikeid:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station longitude:qk]' field-type='quantitative' max='-8234772.7037711665' min='-8248080.7926957645' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station latitude:qk]' field-type='quantitative' max='4974511.9287742143' min='4968702.7146245418' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' palette='tableau-orange-blue' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' />
+              <size column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station latitude:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station longitude:qk]</cols>
+        <pages>
+          <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</column>
+        </pages>
+      </table>
+    </worksheet>
+    <worksheet name='Monthy Growth Ride'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='trip Growth rate' datatype='real' name='[Calculation_114278893427503105]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(COUNT([bikeid])) - LOOKUP(ZN(COUNT([bikeid])), -1)) / ABS(LOOKUP(ZN(COUNT([bikeid])), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[pcdf:cnt:bikeid:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Sum' name='[sum:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_114278893427503105]' derivation='User' name='[usr:Calculation_114278893427503105:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[starttime]' derivation='Year' name='[yr:starttime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]' scope='rows' value='Trip Growth Rate' />
+            <format attr='subtitle' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='172' />
+            <format attr='width' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]' value='122' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' num-steps='2' palette='tableau-red-green' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' />
+              <text column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[pcdf:cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_114278893427503105:qk]</rows>
+        <cols>([textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok] / [textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Need Inspection'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='None' name='[none:bikeid:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]' direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#679a88' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Need Repair'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='None' name='[none:bikeid:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tripduration]' derivation='Sum' name='[sum:tripduration:qk]' pivot='key' type='quantitative' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]' direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:tripduration:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='total' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:tripduration:qk]' />
+              <text column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#f1923e' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Peak Hours in Winter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Sum' name='[sum:bikeid:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[mn:starttime:ok]' member='10' />
+              <groupfilter function='member' level='[mn:starttime:ok]' member='11' />
+              <groupfilter function='member' level='[mn:starttime:ok]' member='12' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' num-steps='2' palette='tableau-red-green' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' />
+              <text column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[hr:starttime:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Peak hours in Summer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Sum' name='[sum:bikeid:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[mn:starttime:ok]' member='7' />
+              <groupfilter function='member' level='[mn:starttime:ok]' member='8' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' num-steps='2' palette='tableau-red-green' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' />
+              <text column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[hr:starttime:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top 10 Start'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='Index' datatype='integer' name='[Calculation_799107513446076417]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='Index()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station id]' derivation='Count' name='[cnt:start station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station name]' derivation='None' name='[none:start station name:nk]' pivot='key' type='nominal' />
+            <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+            <column caption='Start Station Name' datatype='string' name='[start station name]' role='dimension' type='nominal' />
+            <column-instance column='[start station id]' derivation='Sum' name='[sum:start station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_799107513446076417]' derivation='User' name='[usr:Calculation_799107513446076417:ok:4]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Field'>
+                <order field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[start station name]' />
+                <sort direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <sort class='computed' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]' direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:start station id:qk]' />
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:4]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='1' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='2' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='3' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='4' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='5' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='6' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='7' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='8' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='9' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:4]' member='10' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:4]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' palette='tableau-orange-blue' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:start station id:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top 10 end '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column caption='Index' datatype='integer' name='[Calculation_799107513446076417]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='Index()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[end station id]' derivation='Count' name='[cnt:end station id:qk]' pivot='key' type='quantitative' />
+            <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+            <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+            <column-instance column='[end station name]' derivation='None' name='[none:end station name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[end station id]' derivation='Sum' name='[sum:end station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_799107513446076417]' derivation='User' name='[usr:Calculation_799107513446076417:ok:2]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <sort class='computed' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:end station name:nk]' direction='DESC' using='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:end station id:qk]' />
+          <filter class='categorical' column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:2]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='1' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='2' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='3' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='4' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='5' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='6' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='7' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='8' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='9' />
+              <groupfilter function='member' level='[usr:Calculation_799107513446076417:ok:2]' member='10' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[usr:Calculation_799107513446076417:ok:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' palette='tableau-red-white-black' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:end station id:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:end station name:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Total trips'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JC-201712-citibike-tripdata' name='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0zj4edj17e9ozm1g1pfgh0adlm3l'>
+            <column aggregation='Sum' caption='Bikeid' datatype='integer' name='[bikeid]' role='dimension' type='ordinal' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' scope='rows' value='Count of Trip Over 6 month Period' />
+            <format attr='subtitle' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='301' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#906800' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]</rows>
+        <cols>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Total # of trips: </run>
+              <run bold='true'>&lt;[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.322259'>
+                  <node-reference />
+                </x-coord>
+                <y-coord axis-value='174641.17525773196'>
+                  <node-reference>
+                    <axis>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='113' y='-26' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Times New Roman' fontsize='14'>Charts below plots current bikes by ID according to the total duration and  the number of trips they were used. Top ranked  kikes in both charts should be due for near future repair/inspection to ensure satisfactory level of services</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='6' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone fixed-size='170' h='20001' id='5' is-fixed='true' type='title' w='100000' x='0' y='0' />
+            <zone h='79559' id='4' type='layout-basic' w='100000' x='0' y='20001'>
+              <zone h='79559' id='1' name='Need Repair' show-title='true' w='44898' x='0' y='20001' />
+              <zone h='79559' id='3' name='Need Inspection' show-title='true' w='55102' x='44898' y='20001' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Demographics'>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' type='layout-basic' w='94694' x='0' y='0'>
+              <zone h='86067' id='1' name='Breakdown Gender' show-title='true' w='31312' x='0' y='13933' />
+              <zone forceUpdate='true' h='13933' id='8' type='text' w='94694' x='0' y='0'>
+                <formatted-text>
+                  <run fontname='Times New Roman' fontsize='14'>With regrad to the demographic characteristics, the Males appear to represent the majority of the riders for the citibikes followed by females and small % of those who chose not ti declare their gender. On the age, no clear trend appear to emerge as the usage seems to be evenly distributed aross age with the exeption of a spike for bith year of 1996 which is most likely due to an outlier   </run>
+                </formatted-text>
+              </zone>
+              <zone h='86067' id='9' name='Duration_age' show-title='true' w='63382' x='31312' y='13933' />
+            </zone>
+            <zone fixed-size='91' h='100000' id='4' is-fixed='true' param='vert' type='layout-flow' w='5306' x='94694' y='0'>
+              <zone h='9562' id='7' name='Breakdown Gender' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:Calculation_799107513458900996:nk]' type='color' w='5306' x='94694' y='0' />
+              <zone h='6375' id='10' name='Duration_age' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[avg:tripduration:qk]' type='color' w='5306' x='94694' y='9562' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Mapping'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' type='layout-basic' w='84000' x='0' y='0'>
+              <zone h='50000' id='1' name='Map Start Stations' show-title='true' w='84000' x='0' y='0' />
+              <zone h='50000' id='8' name='Map Start by Month ' show-title='true' w='84000' x='0' y='50000' />
+            </zone>
+            <zone fixed-size='160' h='100000' id='4' is-fixed='true' param='vert' type='layout-flow' w='16000' x='84000' y='0'>
+              <zone h='15875' id='6' name='Map Start Stations' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' type='size' w='16000' x='84000' y='0' />
+              <zone h='7250' id='7' name='Map Start Stations' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' w='16000' x='84000' y='15875' />
+              <zone h='13750' id='9' name='Map Start by Month ' type='currpage' w='16000' x='84000' y='23125' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Story Title</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' hidden='true' id='1' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='4727' id='3' type='title' w='100000' x='0' y='0' />
+            <zone h='11979' id='4' paired-zone-id='5' removable='false' type='flipboard-nav' w='100000' x='0' y='4727' />
+            <zone h='82854' id='5' paired-zone-id='4' removable='false' type='flipboard' w='100000' x='0' y='16706'>
+              <flipboard active-id='1' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Total Rides and Trends during current Period ' captured-sheet='Total and Trend' id='1' />
+                  <story-point caption='Peak Hours and Seasonal Effects' captured-sheet='Usage Time' id='2' />
+                  <story-point caption='Best and worst stations ' captured-sheet='Used stations' id='3' />
+                  <story-point caption='Users Demographics ' captured-sheet='Demographics' id='4'>
+                    <capturedDeltas>
+                      <dashboard name='Demographics'>
+                        <zone id='8'>
+                          <formatted-text>
+                            <run fontname='Times New Roman' fontsize='14'>With regrad to the demographic characteristics, male riders appear to represent the majority of the riders for the citibikes followed by females and small % of those who chose not to declare their gender. On the age, no clear trend appear to emerge as the usage seems to be evenly distributed aross age with the exeption of a spike for bith year of 1996 which is most likely due to an outlier   </run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Mapping Stations Distributions' captured-sheet='Mapping' id='5' />
+                  <story-point caption='Time for Inspection ' captured-sheet='Dashboard 6' id='6' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Total and Trend'>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='6' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='4' type='layout-basic' w='90671' x='0' y='0'>
+              <zone h='60659' id='1' name='Total trips' show-title='true' w='34694' x='0' y='39341' />
+              <zone h='100000' id='3' name='Monthy Growth Ride' show-title='true' w='28921' x='34694' y='0' />
+              <zone h='100000' id='8' name='Evolution of Usage by ' show-title='true' w='27056' x='63615' y='0' />
+              <zone forceUpdate='true' h='39341' id='10' type='text' w='34694' x='0' y='0'>
+                <formatted-text>
+                  <run fontname='Times New Roman' fontsize='11'>For the Period under study from July 2017 through Dec 2017 ( i.e., 6 months ) the total count of the trips recorded by the City Bike was about </run>
+                  <run bold='true' fontname='Times New Roman' fontsize='11'>174,640 trip </run>
+                  <run fontname='Times New Roman' fontsize='11'>.&#10;&#10;Using a month over month growth rate , we notice as expected a drop of this monthly growth rate during the winter season ( for the month of Nov and December)  due to the difficult conditions of biking in NYC as the weather deteriorate&#10;&#10;Interesting to note that while the trend of downward movement is seen in both cases of annual subscribers and customers, we notice substantlly more drop of the usage rate in  the case of the latter . The former ( who have already paid for the subscription anyway) are slighlty more inclined to use this service during winter time </run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='100000' id='5' is-fixed='true' param='vert' type='layout-flow' w='9329' x='90671' y='0'>
+              <zone h='6815' id='7' name='Monthy Growth Ride' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' w='9329' x='90671' y='0' />
+              <zone h='6924' id='9' name='Evolution of Usage by ' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]' type='color' w='9329' x='90671' y='6815' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Usage Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='false' fontname='Times New Roman' fontsize='14'>Regarless of the season , the peak hours seem to coincide, as expected, with the rush/commute hour both in the morning and afternoon with peak hour at 8 am and 6pm </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='9' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone fixed-size='152' h='18023' id='8' is-fixed='true' type='title' w='100000' x='0' y='0' />
+            <zone h='81977' id='5' param='horz' type='layout-flow' w='100000' x='0' y='18023'>
+              <zone h='81977' id='3' type='layout-basic' w='90671' x='0' y='18023'>
+                <zone h='81977' id='1' name='Peak hours in Summer' show-title='true' w='45336' x='0' y='18023' />
+                <zone h='81977' id='7' name='Peak Hours in Winter' show-title='true' w='45335' x='45336' y='18023' />
+              </zone>
+              <zone fixed-size='160' h='81977' id='4' is-fixed='true' param='vert' type='layout-flow' w='9329' x='90671' y='18023'>
+                <zone h='6375' id='6' name='Peak hours in Summer' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' w='9329' x='90671' y='18023' />
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Used stations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='false' fontname='Times New Roman' fontsize='16'>Bike stations close to the exit of the metro/path stations seem to be the most used ones  in the cases of Start and End stations. &#10;We also see fairly the same stations the list of top 10 used as starting and ending points &#10;&#10;Remote ares stations ( e.g., not close to metro stations) are the least used to pick up and drop off pikes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='10' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone fixed-size='182' h='21320' id='9' is-fixed='true' type='title' w='100000' x='0' y='0' />
+            <zone h='78680' id='5' param='horz' type='layout-flow' w='100000' x='0' y='21320'>
+              <zone h='78680' id='3' type='layout-basic' w='96035' x='0' y='21320'>
+                <zone h='39340' id='1' name='Top 10 Start' show-title='true' w='48018' x='0' y='21320' />
+                <zone h='39340' id='7' name='Top 10 end ' show-title='true' w='48017' x='48018' y='21320' />
+                <zone h='39340' id='11' name='Bot 10 Start' show-title='true' w='48018' x='0' y='60660' />
+                <zone h='39340' id='12' name='Bot 10 end' show-title='true' w='48017' x='48018' y='60660' />
+              </zone>
+              <zone fixed-size='68' h='78680' id='4' is-fixed='true' param='vert' type='layout-flow' w='3965' x='96035' y='21320'>
+                <zone h='6375' id='6' name='Top 10 Start' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' type='color' w='3965' x='96035' y='21320' />
+                <zone h='6375' id='8' name='Top 10 end ' pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' type='color' w='3965' x='96035' y='27695' />
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='28'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='4' />
+    </window>
+    <window class='worksheet' hidden='true' name='Bot 10 Start'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Bot 10 end'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:end station name:nk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Breakdown Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[pcto:cnt:bikeid:qk]' type='size' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:Calculation_799107513458900996:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:Calculation_799107513458900996:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' hidden='true' name='Dashboard 6'>
+      <viewpoints>
+        <viewpoint name='Need Inspection' />
+        <viewpoint name='Need Repair' />
+      </viewpoints>
+      <active id='5' />
+    </window>
+    <window class='dashboard' hidden='true' name='Demographics'>
+      <viewpoints>
+        <viewpoint name='Breakdown Gender'>
+          <highlight>
+            <color-one-way>
+              <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:Calculation_799107513458900996:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Duration_age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+    </window>
+    <window class='worksheet' hidden='true' name='Duration_age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[avg:tripduration:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[avg:tripduration:qk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:birth year:qk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Evolution of Usage by '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Map Start Stations'>
+      <cards>
+        <edge name='left'>
+          <strip size='219'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' type='size' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station latitude:qk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station longitude:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Map Start by Month '>
+      <cards>
+        <edge name='left'>
+          <strip size='219'>
+            <card type='pages' />
+            <card type='currpage' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[cnt:bikeid:qk]' type='size' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>7</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:birth year:qk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station latitude:qk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station longitude:qk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' hidden='true' name='Mapping'>
+      <viewpoints>
+        <viewpoint name='Map Start Stations'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map Start by Month '>
+          <current-page>
+            <multibucket>
+              <bucket>11</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+    </window>
+    <window class='worksheet' hidden='true' name='Monthy Growth Ride'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Need Inspection'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Need Repair'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:bikeid:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Peak Hours in Winter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Peak hours in Summer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[mn:starttime:ok]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10 Start'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:start station id:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10 end '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[sum:end station id:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:end station name:nk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' hidden='true' name='Total and Trend'>
+      <viewpoints>
+        <viewpoint name='Evolution of Usage by '>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:usertype:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Monthy Growth Ride'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total trips'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total trips'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[none:start station name:nk]</field>
+            <field>[textscan.0zj4edj17e9ozm1g1pfgh0adlm3l].[yr:starttime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' hidden='true' name='Usage Time'>
+      <viewpoints>
+        <viewpoint name='Peak Hours in Winter'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Peak hours in Summer'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+    </window>
+    <window class='dashboard' hidden='true' name='Used stations'>
+      <viewpoints>
+        <viewpoint name='Bot 10 Start'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bot 10 end'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Start'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 end '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7EAAAOxAGVKw4b
+      AAAgAElEQVR4nOy96ZNc15Xg93v7e7lnZVZlZa1AVWHhvoiUKImiForq1trT3Zqxpz0ex3gc
+      MTEfPOH/wB3+6giHHTERtiMcnmh7xuNwh1rd061d4iKSIkEQQKGAAgqF2vfKyn15+3vXHwoC
+      CQIgQRIiISF/nzJf3nfvuS/veffce889VxJCCPr0uU+RP20B+vT5NFHf/eXdnYEkSde/S5J0
+      xxkKIW7K5718mPz69Pld8o4CCMFLP/khm1Ub327x+Je+xbBc50Au8eSJsTvO8MxvXuLS1SUW
+      lvZ55KETPPnYcRpRhubyBb7yza/x7/793/Gv/+U/+13UpU+fD80NPcClxTX+4r/+V+QSMrMX
+      ljl/+W2WvSJlo8uvXjuDolt873vf5sc/+I9g5hCSzPf/9HvM/uZFyg99nnLO4qkvfo0HHzrG
+      X/94ln/6T79LbXOBvZ0mb711ioGJCQB6zQp//+NfEEkK3/jW9xjMJj6Vyvfp884YQJL483/0
+      bf7m//kr/qf/5X8lVE2mp2d4+unP8OOfvcT3//O/4AsPlHjxjTl2Djr8+Z//I3J0WD9ocXl1
+      j6GsdcsCAqdLN1CZnpnh0YdmAHjxJ39PbnSa6ZE8P/nlrz+Rivbpcyuu9wAisnlzdoV/+a/+
+      NSLy+Lf/+1/xwlOHDTYSMpoClmXheTa6aSIDT3/uM/zoFz8iNzKN8iHMei8IyScssqksXzte
+      vNt16tPnjnnHBJItcrrN//F//jtUKeaRJ58hXxD84qU3+fITx/ir/+s/EHoO3/v+P+HvNq4A
+      kCvPUFn7f3n+O392Y66ShCzJ7/oskUlIvD17BUmW+OKzz/Kffvkmlg7Hn3yOsfLgJ1XfPn1u
+      QPo46wBrixf4zflV/uIff+9uytSnzyfGx1KAyt42qdwQCVO7mzL16fOJ8bEUoE+f33f6K8F9
+      7mv6CtDnvqavAH3ua/oK0Oe+Rv3gJH0+STqdDp7nfdpi3ICu6+i6ThzHn7YoN6CqKmEYfrw8
+      7pIsfe4SvV6Pbrf7aYtxA8lkEiEEURR92qLcgGmauK77sfLom0B97mv6CnCPEvk2P/zBf+Ct
+      C4v4vkentsVGpYnreZw7dZowhr/74V/z9z/6CRcvX8UPfE69cRrf84jjGM/zEQLCICAIQzzP
+      JYpi3NY2Z2bXPrJcgdtibu4SS6sbRGFILARhGLK7uY4TxggRs76+ycHuJj03JIwi4jgmjmPC
+      MCS8do+4dl8cRYRhRBxFrK59dLlalQ0uXV1hc6dCGIaIOCYMI/b39wFxKGscEwQBQgjqe+s0
+      7LBvAt2rKHqCkdEyxyaK/MN/+ge89g6J4Qc4f+4sjz36GA8DrXYLWYvZWNtg6coseAGvvPQL
+      xsYm2HcF/+a/+We8/uKPWK8LhLdHJmkRqmmKgw9+ZLlEHOJ5Iel0xOuvvkxuaITm7jZaKo3R
+      9nniwWmq+7vIMkjVDpKI0QwNJXLpODGR02H85GOkZZc3zs5THMiDrKCrEHwMCyv0PcJIol3d
+      YeHSHNlsnlBSMaSQoaEhLs6+DZJEL5RQhIxhCEaSI30FuJfJ5QpouslANklq7En2ah0efvAB
+      CsUiEvDw40+jxx4NT0P2JYJY5amBIkOlUba2tnFjUI0U42MW2cwkkduh1ugykE99ZJkkRWf8
+      yCSlQpIo9ElYCaSohKJbJBIWAiiNjGFp0HVDvCBClUICyWS4nIUgiwhDAjlkuDREKp3BUGWC
+      0MMNPvqz0s0kuueTSg6g6CbpbI5Wq41pHLrpmMkUmqJQSOdwOj08r4ehyn1XiHuNvb09ut0u
+      Io5xHAdJUbFM46Z0cRSBLCNf314qCMMIVT18p0VhiKwoH2n7qRDihvuSySSJROJwEHzNdJEV
+      FVm+s7zjOEaSZKIwIBYCRVEQQiArynX5P8r221sNgoUQIElIvLM9V5Zvb+n3e4B7lDjy+dHf
+      /39MP/pFjDjG1AWZgQKbm9tMT0/xmx//iKFHP0sxm2FydJCrC+e5OL/El7/6VTq9Hkvnr1B+
+      6Ciq0LEkj1BJcGS8zKULF8kNljA0iU69ihNBOpnCjWTUoIVQdC4u7/C9b3z5lnKFfpfz8yuU
+      ysNYKljpLM1ajUw2g+2GmEqMUA167SaZXIF2s47Ta1M++gBX5s5RLI1R3d2kZfs88MBxrGQG
+      v9ui0ayTzg+hahrFfPZDP6/QdzlodKgf7DM6OkwsZHa210jnRtBUmaSp4IagEWKk8yRNHegr
+      wD2LoplMHJnk6EiOU29cYHt9lWJBxciP8NKbszxzbIzNrU2q+yoTBYmVbZv62gXmLwxwdvWA
+      J4cHOT1/hZJqIsmC0OkxpE5RDS2uvnmaVFohDGNCoRB2GnhagrSpIEkRpnX7TUqSpFEsZGnW
+      DtjqdsikUvTaHSrZAWQEmiIhhS6RYlCtVvFtm0AxKAOyrGAYBslMDjMj2FhdIZm0UMw8xGB3
+      2zh+RCGf5cP2W712k93dKqapcrBfoePFJJSQxUtXmJoaYm0vJm/JaJJAdSOS4yNAXwHuaSYm
+      Z7CsFA8+/DBj5QxGIoWZTDN99Bg7GxvMjA4iJAPMAqXsMuN//KfUqg2+9LknKVsmg1KMKSTW
+      r85TiRQSpROYq6eZOX6UZs9lYrhAjIwphWzVHYbyKWIR4Ti3X1ySrpktwyNj+L0WmpXATCSw
+      rCRhLDBVQCmiKApR4NPtdtHNJJoCxWIB13UZKBSRZIlCNgOqSWC3kZN5YiEwrI/WJA0rwcBA
+      DsvQCEOfVN5Ejh0GigZdx+f4ZBIZ8N0eeiL9Tn36Y4B7i9+OASDk3KkzpEtjTB8ZvfZGDKlW
+      2hSHBgCo1Q7I5YsoH2CL7+9sYmUHySTNjyTTDWOAe4i7sRDW7wHuWTz299vs1i7Qa+ygaQY7
+      jQYJX3AemJwo88vXXuef/xf/FQlded+cSiPjn4zIv4f0F8LuYZr1Gk8+/Tlmz55m9co8kWyx
+      cGYWEdu88uZFhktDn7aIv/f0TaB7jHdMoIhO2yGdSdGo7iEUE1XXkcKQRqtFuVRkY/eAoxPj
+      dzwd+VH5QzaB+gpwj/GOAtw7/CErQN8E6nNf01eAPvc1/VmgewxJkt536f7TQJZlJEm656J6
+      3w2Z+mOAPvc199arpk+fT5i+AvS5r+krQJ/7mr4C9Lmv6StAn/uavgL0ua/pK0Cf+5q+AvS5
+      r+krQJ+7TuC2WVzZ5PL8PNEtlll3d3c52LjMW5fWb/qtU9/jb//mB8xdWXvfMvZ2d6luLvDW
+      hdXr106/9iv++gd/S6NeZXFtFxD89Kc/ed98+q4Qfe469e1lfvLiZaLqCu1Oi4Uri0wfm+Hi
+      7CUGR0ZYvHiGzz71OGcWNtnfeABDU5FCh6++8Ee8/NLLPPXMFzk/v8KZl/+Oo8cfYX1jk6Hy
+      CJpm4jkOhhbw9uunefqZJzl7eZP9vcf47gvPcnVlDV2WOH1mFjWZ461XfspGtYsW/YDFzRr/
+      2T//FwwkbjzNqN8D9LnrrK3vMpJTmJie5u3z82SzGfb39xg79hhx6DAxWsYyNJ569mv43Q5K
+      b4eenEWVJQq5FLMXr3BwsI+eKnBsJIuayNHsuHR2riBJPoFWYvLIKJah85kvPI/X3jssWNEw
+      E0kmynnazSpNR2AZGlcXLlFrdRG3cOfu+wL1uev0uh1UTQcEQRjT63YZyGfxghgRh8jE+GGM
+      YSWIApdf//ynPP317zGUtRAiplqpkMwOEPoumXSaWrVCMltAikM0VSEQMpHbxQtjDDNJFHqk
+      02na7TaphEmn56BoBqHbxYskcimDWsumPDx0U7SJvgL0ua/pm0B97mv6CtDnvqavAH3ua/oK
+      0Oe+5kMpgBAxvv/BMawD//Bwhmt34fv+LdPFUUgQfnCkARFH+MG7wvUJQafd4U7H77cr/31K
+      /MBzuoS4fb0+LCKOCKOYIHj3c/tovFfuIAyv5xmHAUH0wed83fS8/4BR/vIv//Iv332h16ry
+      q5d/DYqBrhwGNO32bFQp5srCAvNX1xgtD2N3u2iGwdu/fonLK0skckOIKCL0HVwvQFFleo6L
+      FIe8/sZpJifG6PVsgiAk8BxiSWZneY6KraHJESIOiWIQcYDrOqyubmCaBmEU09lbYW6tTiGT
+      IIpjWntXObu4SzabRgQeQpJxej2CIEBSVBTh8w8//jmlcpkw8Dj1xpvkCkWiMEQl4sLs2zS6
+      LlcWFtCsFOfOz5GxVN544zSjR46wurTI+fMXKJVK1w5eiHE8n8D38f2AKPBotWqcfvsi5ZEy
+      frfKz195k+31VfJDZXzPR0QBYSwR+TZn3zpNz/dYWLiKldCZu7SMIQWcPjvH+OQEK1evkMoW
+      CH0XVTcIPAcvjNGuhToXkc/rr75KqlBClQS24xD4Poos0e05QIzjuqyvrHJhfo6h0ghh4CEr
+      Gs3qFi1HAvuAixfOU/FMSjmLTtfG0FUWryySTFoEYcTKyiqGrtJr77Kw2qJcytJut1EViZ7j
+      vVP/MMDzPFbXtygWBu5KQ/Q873po90+Sm0q0UjmkyCUhecxdXqKzu0xi8gk+f7LEXrWOFAX8
+      +lc/pt4VfPnrL5BOpnHDkEvnTuHFhyt6CcVAySXBton0xGHFRMjZs2eIfRsvlIn8gMJQjk73
+      IvM9F0mK+OMXvsH26gI1L6J90GJ/fwevXSc/NELgR5x664CHn3gCv9dFDW0Wrq4Q+x5Bd58Q
+      A0VVyQxO8fSjRxks5jl/7gySJGOZOufOnmVifJyp6SnGR8fY3dnl6IPH2d/uYMiQK5QojzTQ
+      Jdjc2ETXdd5++zSea5PO5Ig9D1tSsGQJWbi4sYZCxNnZeb7w5HHKo+MMym1+/LNfkE8lyGdT
+      HJk6xvDQABOT41QqB0yMDtH1BHIYMTg8TKlpo0gxrZ7DjK7w5ptnePyLX+HNX7+Imi3z7Oee
+      BOBgYxkrk2Zzt05UXaJmh0iKgmmaCM+lYTtkkklC30M3dc6cPUPcq/LQ57/J0PAEb585SzkR
+      4ks6nbWL/N2SjCbBt/74K2xurFOrV/GDkNAPcdsVaq5PLj1JZXWBPc/Abh0QOg6OpGAS43gu
+      lqHiC4sTx6bvSkP8tGIO3aQAbrdJfniK8ugo23s1jkwfI06lUPUE2aSBFxhIiRTZQZO0qVEl
+      4uSDj+HVtmgFCt1mnaQKQjeJzAy65NOxQ4Ssk8uksG0FA4UwDA9DbQ+myRUVfKeDpmsMDJVx
+      KjXMkk4ce/i6hixBsTRG1KszmE2xU7MwrZhMsYhd3SE9eZRaowsCVDmisr1OvjRO2K3ScX2i
+      QHBkOEd+ZILYt1nZrjAyMsrO0jrHHnqQudk9EAG5fBEkidGRMpVqDUXRUK0iIwNpGi4MKhGN
+      dg/f9cjnc3i2g6zI2HaPTqNKaJo895mHaDgCOewSA26nyXalRrlUZq9S5fixAvuKTGD3KJZH
+      ABldVYhiQTKZoF6rUx4bx8gM0qwd0AugVB5jo7rAeLlALTjAlRwArEQCkUyjG20iAfl8llan
+      hybD4PgEYRjidrtk8sPks4L1xjrpdIq0rJFIZ5ElmfJwiSCOKGYG8NoNvDAkpcWouky6MMj2
+      2j75dAo3lWNQDmi0uki6jipL5BJpBHzoUOb3Er83C2F2p4Eb6wxkkx/h7ojt7X1GRkb42JE9
+      RMzK0lWSAyVKhdzHzOwQ3+kSySaWceP7SIiYKBaoyvsHv30/ms0m2Wz2ngtp8l5s2yaRSHzi
+      5d52ECzigNnTp+i4Ed3mPlfXdm74/bcHFEeBi+N9+AHT6tVLONfG03HgceXqMl6nxuLqjeVE
+      UcjKlctEevqGxl8/2GV5eYlGs4PrBUTv0uPVq5e5cOECbdunWd1hYWmL0dE7b/yd2g5rO7Wb
+      rodhCJJMNm3h+SFXLp7j9Ow8ceixXzlM324csHdQp92o0mq3ubywSBQLPM/Bv3YK3P7uNsG7
+      3CR1K3VT4weQJPljNX6AXC53zzf+T5ObnnrodTg/t4BpQMUxOObs8NqZZfAdhNdlfWODzz/3
+      VU69/HPMVJZCNoUTRPhBRCqdJpsvMJhSOHtpBV14aKkBAscmm8/RbLaJI59CPs/a2jpOpNBo
+      dSmmDWodhxPjAyxemad9sEEiPUBmoEhldY5WN2az3mFsMMtOtcuzn3uY0+cW+NpzT7O6vE6l
+      UiHQVcpDowyWhul2O9jdNpeuqGSSEluLSxhKxNLiEk8/9zU2Ls8RRBG5oRJucw9JSSPMBA9N
+      T7B46TyRiFjZbOG2R+m020iShG7obOzs8NxzX8UQNq9ervDsw6N0tytcPvc6V+sJvvMVjR/+
+      4Ic88ezzzL/xKzKFMqEIkdODbJz9BbmRGZr1Dq7fJmFeAtnkC89+AUv7eI38D4EPmnX7XXGT
+      Atj1PRxJx2vsY1oTGMkkqogQusaFM6fIThwnCmOS6QytbpfJwSQbe3USqQy1ap2Depehx6YI
+      oohmvcWIIiFbJXY21zFNk0rLQZfA0DUWr65w9MgIe9UOsfBBUkgkkmhWmt3tTWaOzdDdT9Fo
+      14l6HeZqB0wdmUGgIIuAaqND0GviRQpT0zMszV/l+MxRll2f0ugoCys1OrU2GxsblMoFYiNJ
+      HESMDJhcXK/Qq/ZQugc02k0CRebB6XEajQaNbodEYoilSxcYmTrK3tYBiiYTSoe2b89xcRyH
+      lKlSKA7x9stvcBAVubIgoxgmV+bOsbm7z9FUEUGMZWjIiooqB3hYxL11tqoxpm7RcnykSMIw
+      zd9rW/rjYhjGp2IC3TQGEELQbjXRDR0/FGRSSbrtFmEco6g6cRSRzWbxPRvb8dB1jbWFWbzk
+      BI9Ml/ADgalJdN0QTYpRdBPH7pFIWLheiIgCEokEtuNimTpeKJDiEEXTsUz98I1LzEHL4ej4
+      4XRet2cTCzB0nVhIpFMJAs+l5wYYqkSEhN1pE6AyOjxIp9XA9SOy2TTdbg9JklA0nTgMyGaz
+      QIzvH5ojvu8iyypCxKSSSTrdLqqqEvgeqXSadrtLOmnRtV10XUXTTQK3hxMIsikLZBVJhNi2
+      y361ztBAFiuVIfRdFE3HsR3SmTSB6+CHETESUhTw4s//gQef+QYzY0P4not+nyvApzUG+L0Z
+      BPf5w+bTUoD+jrA+f/CcefNVUkNHGLICXpvfoaC5SGj0ZLmvAH3+8JFlidnZWSYTEVfW6iT8
+      OuWJ4zRr230F6POHT7FQxBooU0iYhPkKg0lBaugoctS7A2c4IfC8j+70JeII92Pc/44YMa57
+      51NlruvesbPcHcsQR/j+3XcS81yX90oaR+EHO6SJmEajiRCCKPDww/jQdym+s3qHvkcQCQLf
+      JfxgH7l3ihXiYx9N9EkyPn2SkzPTDI6MYie6XLD3GR3KUy6P3dwD9Jp7vHZ2hZlSCnNolFwq
+      SRwGeE4PzUridJqoZoqkqdJo9yjmc9h2jyCMkBUVWYRIqkHku0RxwPrqGjUbvvDZJzA0mXq9
+      ga4pCGRkRSGMBHIcYCQzxMHhYpEkq6hyRCzpiNAljmPWN1Y5OHD5wrOfxdQVDioVDDOBkCRE
+      4KMZOr4foKoqW5ubbGxt8fRnP8dALofdaxNGMTEyOxsbTB6dQNEsLOMwQoDdbeP6IaqqIcsQ
+      o5BOmrSbTYxkGqfTJgp62JFFIZ+i02mTTlm4fkwmlaBer5FMpfCCw+/tVgOBTBiG6IZB4Iek
+      kya2H6GIAM/p0gp0cgmVdCrBb179DV984Wt4rQaKkSRhauwuX2QvzjM1nEcWIWYyRa/TIZ3L
+      o0ox9WYHe3+NNcfgoXKDxaVV9KGTPDCWRkQxrpBIWgadVhMhyRhWEqfbJJnK0O12Cbo1llbX
+      yUw8hlK9iDbyOMMZFc2wkCKPRqtHIqEjyypBGEMcIpBQFMHGxgaV/SbPfPHzJC3jE2/QH4dL
+      20u8tvg23//sN4FbzALFkcOZc4tMDBeod6r0XGjVqgQxpNMmrf09Rh/8PEfyEj99+TR//v3v
+      8uIvfomqauiagqLquHaLIJTRFAnFNAl9j3RxjJFkyH7Lpdlskxss06psEko6Yejx9a89zysv
+      /RJF1VB1HU2ScDwPPwhJ6DGRlgHXwUwN8fDRDD99+QyFgTTpgTxCMehVdwlRcQOJhB6jKCox
+      8NyXnuPFX/6M4zMznL24SC5p4thNSpMP8JlHHwCgtbfEWxc3CNHRRAc9NcjnHpni5TfOoEYO
+      6cFJdlfnKU3M0Ky1GJ85TmVjEcnM8uVnnuDNV39OL0ojJ1J8+cnj/P2PfsboxASXLy9zbLKI
+      pKXYqlTIZ9KkEmnyyZiNnR5tu0dmIIclJJ5+7ouszr/NVj3mqeNDLG1V2NvbozQ2RRCEtHcW
+      UYsT5JJ5LLmL5zi0egETDz+FVr3Edium2+vhuzHFsRICjacePMIvX3kdTVVQgjZ6YYbG2nm0
+      bAnHdhgaKtLtOViGhpnK0vMEn33yYS6dO8V+w0EiJJtOI4ce3VgjdjuMTk+xv7OPEoeoZpYv
+      fP4zd9z4rl4+j5YeJim5bDc9JK/J1MnHSSf0T2wWKIpjvvk//gt++N/9byQN62Z3aCSVRnUH
+      V6iUBws4PZtYCCzTQJIgilVGx8pIgU0kaQyWhmjX66iajqxqJC2NQnGIOI4xzASGKqGoGrqZ
+      ZLxcZO+gxcOPPYZn24wM5jGSWRRZYXxshEathqppKLJCMmGSKwwi4hjNsLBUBUnV0EyLbNKg
+      7YVkkwkGR8bpNWoce+gJNAXy2RTlwTytTg9D1ykMjdBpNTF0Bc1IkM0kSWWyDI+MYsoBBy2H
+      wuAwQRCQSycYzGfJFobIJHQazQ5WKgtxyPTUFEEYkUyliaOQQi5DtjBIPmVSqbdIpQZIWCrD
+      wyU81yNlWeTzh29bzBwz4yUyA0MosU86P4Cq6SRTaYbyKbwwZnB4+DAaQirF8PAglUoNWVUo
+      jU4QdOuMj5bZ3Gvy4EMnyVkK1W5MIWugmGmK2QQH9RaGbiDJEoXBEookKObT1OtNNF1DT2aR
+      44Dh4WGErJJOpxFxjG7oxLFgYvoEsdtltFyisruNZqYwExZjpTyekuSh6WG0ZAbDzCFHDkJS
+      UDWD0ZHhO25865sb9DoOgePQcrvogUdHmKRMBSEEuq7f5eZ+M7Ik0XI6bNZ2eWT8xIdbB4gC
+      l8WlNSaOTpE0f/fC3g6312Zta5+pqSn0j+FGIOKYGFB+h2dy7W6uYOZHyKfMj5VPr1Wl2ouZ
+      HPndHI5dr+5jpQtYhsre1jq+bDI+Urqri3OV3U0kPYUmRbSdkNjpUBybJGV+cj0AwG6zwr/5
+      v/8H/vq//bfvPwgOvR4d+50dYIpm0Gm3b2j83W73pgGcEDG16i5vvHn2tnm/cxauoNlsfqgK
+      mMkMJ08cO2z8ccjVq0sIARfPv83q5u4NaZvNJq+/9votd1pJsnxT4282m5x6/XXeO2y/Mj/H
+      1eU1Zk+9zvZBjfPn5z9Y0DhkY69B2hC88vLLnHrzDRrd9x/Inz/zJm3nxl13K0uLaMmB643/
+      zFtv3TRoFZFHq+1c/+52mlw6+xo77RsTChHw1qmzdLs9Lsye5sWXXuLcuTnSA6XrDnmlkVG2
+      N1Zpfcj/5YMYKo8zWMiTGygyMTrMkZljpD6FF+lwdhBD1VnaX7+5B+gerPH6pSpFrcHOXgs9
+      O0hlb48/+f4/ZnNhlp2DNoYuI0SA0wtRExY6AbFskDYl9houf/Tlp/jRr94gpQp0K8nO5gbP
+      fP279Lbm2a51SRbK+HYD4XlImk671UCJfFQriZWf5Nknj/Kzl05RTCrsdmPGUxHNyELWEqRU
+      l47t47kOuWKZB0YsKpSZGTL4m7/9EeMTZWwnwO50eO75b/DqL3+ElswdnnToNlDykzwxmeLV
+      M4vohoFuZVBwqB+00BJJnMAmq1uEisJXv/ocl869TbXt0mtUef6b36VW2Wb56jJjE+Mc7O8T
+      RhGSlmBsdIRiWuUXL58mnTPRVIOMqdPyBF959hnOzs5ycmKQn778FrYbcvzYETKZFJfPzx6a
+      WYqGpqrImoIcxSBDvWVjaBLPPH6SPT/Fg5ODLF6aY23rAM3QUWTw2hVS5Qd4YAhem98ll7bI
+      D04gDhY5cENsTyaXz7BTafD9736DM2+9gePHKIrC3u4umi4zmMqgFUtoskKzXkGSJFQ5pnLQ
+      4zvf+Tpvv/UWlmHStu1Dk1jSOPHwIwzms3dtEPxJrwT/7MKrvLV8/hY9gCSRSSfpOD5JK4Fp
+      aBw7cRwF8HwPRZbQNBU/iNCsJAYBjh8ReA6ddpvswCCqnqCQNolkBbvbYWRiioylM3PiBJl8
+      HlnEEHgEsSDwAwYKA2QGhhktFUhn08goJFSBK2kcmxqnY3vEkkJot3Bdn1QqhSQrdLttdCtJ
+      6B2++QzTIgx8kqkUmpkkYaiUSsP4jkPouajJPJNjhzarqqlEUUSr1SBGwdBUZEISyRxB6EPo
+      03NDfP+wPMM0kCSJRq3KY48/QrvrEoQhheExkppguFym06ghSTKOH+G7Dl3HBxETBA6V3V3O
+      X1rm2LFppo8fRxExum5SHB5nKJ9EkQ6nPgUKqmGRSCQ4PjOFbqWQ4XpD830fVZYwdBXXD7Ey
+      BcZHBkllC6Qsgyg+DAdYHCoRRTG6Kmj3fE4cnwHA831EHNJzHAzDwjJNkAR2z0Y1TExVxvN9
+      ek5IqZgHJGIhoWsyQtbQVQVZivGC+GO7an+afOXk53hl4dTd9AWKuTI/j5kdvN7IPhkEu7t7
+      DA+XP/5mlw9TqhCfmJ/97u4OpeEy8h+wX/+n4Qv03//N/3zrMUC3ts3a1j49x8X3fXq991/0
+      ECLi4uw50vkBbNdHxBH7Wyssb1aIQx/budnude3uOws2ImL+wgW6vS6X5i9x5uwsld0tdipV
+      Fhcus769d8tyA99hbu4S5fIHN/44DFi/MkfNvpW+C+bn539bGYLgHRtcxDE92775jjgivFXs
+      798B5fLIH3Tj/7T4L7/4pzcvhEVeh8WlZdquyt6ahyenKRUytFsNZAR+JJEvDCC3olEAACAA
+      SURBVJDJ5hkeSDJ3/gK6abFS6fDAAyeYm3uV0G6AJNjZXSO2S3S6Ho7nURwssr2+zuPPPEd9
+      c5W2HRDE8JmnnsTU4czsZaYnysSVTfZaPmpvg8T4Q+RNGYi4cPoUcrqIJGucnB7lpz9/iZSp
+      cmEemrsblE8+jdrZptrz0JN5wl6DQNKQnRY920OoEuG+y+RIntXNXbIaPPTkMzT2N9jePSDo
+      vYYTSzRbDmrkYqZyFIeLiFjCabdAAjmRI27v03VszGyZ2sE+z7/wAsbvrzVw3zI1NH5zD9Ct
+      7WLHKr16hY4bocghC/OXCFDY3Vyn22myf9DgytVVArtFww7pdDqYuo4kyRimid1ts7G5wfr6
+      On7gsLu1TbfTZnVlnXovwDJUWrUKu3sVmvUqPS/CdiOODqfYbzpMTY5Sa/XI5bLsbW/Ss11E
+      FFKp7LGxs8/VK1eIJZ100sALBTtrV2m6CklDYnRihFbHYWd7n3azTj5tsL+7RaMXEoYBwmkw
+      O7/K4OAgHccjndDZ3tlBijx2a22GSiXUoIuvpgm6DRLpNCsL83QDqO9vgaJS2dmmaQc0qhXy
+      xUHu0POgzz2GLMm33hDjODaSJCNJEnEcI8kKcRSiKjJBGKGoKpIkY+oatm2jaRpeEJJKWji2
+      g6qpuK533Ub+rb1c2V6n0nZ48KFH0KWIIIyRJDCtBJ5rY1pJEDEiCvHCmGTCxO71UHULXZVx
+      HAdJURCxwLRMfPdwIAoSigy6mUCRIfitD42IiZGIwgBFUQmDEIFAVVViAXEUkUodhhPxI4Eq
+      C5A1RBwRhSGSLCHLhxEbiCMUVQFJJg4DZOXwGQTh4QafvoHy8ehviOlzX3PPRYXo0+d+oK8A
+      fe5r+grQ576mrwB97mtuUgDfbvHK66cAEHFIo9m65Y1CRNQbzXc5tb1D4Np07NsvntXr9Xfy
+      iQP2N5Y5NXvl+rV2o36js1cc8OprbwDQbTd47Y23rv/kdVtcnn2D9eqN5b27jBvrV+fs3Dtl
+      xV6bF3/5CnYgaGxdYWGzcVu5b8falVl2Gs4HJ3wffivvrZ7n7Xh32sjv8fqpMzd8X7t8ngur
+      1Q8ty9WFi1xeXLmjtG++9jq/z4HUb1oI080UuhTwsx//BE2XsN2ITqNGYbBAaqDE8sIC40cm
+      yGYzbO7sk0/o2D2HVH6AXn2H7NijjJttZrfapHWZ4SMnsbcvsdeOyA/k6LVbNNtdsgkZYZV4
+      5sFhzi2sIAKf3wQOe5vLGKrGZ7/6DVbnTlFv9xgaO4rvtHnttddB0VCFzQ/+47/nxGe/htZY
+      ZrftYm+/wno2zW61yfe/+wKv/PrXmIpKIqnT8WUUEZBJWQhVxzCyNHZWmF/bQYsCgsQgUXOT
+      yyvbtMMatTWfTtdBViQSA2U6tT0syyQOQlzXZ3JihMWFKxjpAcaGc9TqdY4NnuDUyy/RDCNU
+      RWMgn6RR7xDFMHVkhPnz5zCSKSKhoqsqiWSSlc1dCrkEhmHSbXX41ne+zez5WQhsZh75Al51
+      mQNXZuPyHOnBMvv7NYqFLJpu8tWvfonZ82dwOzZGOs+XvvgM3doWr75YQ+gp3MY2aqpIt7uF
+      pj+L1tmiGykYYYf9Zod6T2Y44dIRSUS3xZe++R1W5s+wd9DGcVp8+WvfZGt1kdkrq+giwjAM
+      eq6PoQtUNYFuZtje3GRkYvgmb+DfJ25SAN/p0u45qLpGDAzkE2QyOVKaT2JggHDmBOOlHDuV
+      BsVcCrvTRdUNnJ5Nzw44PpQnq5mkqy5CQNLUcWUZVQ7p2S6JTJ5UKkUUBQyNjmImUyR0FV+W
+      qe1to2om2XweGXjwxAxXNvYRQgJJPVyfkCUkSWJo9AhD+QSyNsx2axXLUHC8iBPHZ5AklZHS
+      IF07oDCQYjiRZXNjA9vuYaR0EIdrGQKFREInkHUQAknWkOIASTV49MkH2NrcOtyooapEYcxQ
+      MY/reqSSFqphEkaCVCpJq93F9zxkRUYJD9cxeo5PKpNnbCiBr+YYLI2RSshU6oduFbbjc/zE
+      cVoHe8RRyOBQEYEg9HyGB/M0mm2GB0qsLy4xNDLJQD5JOluk16ggogA/ivE9H1QN33EQAjKZ
+      LJlMhoOWy/j4JLv1DomESbfdpqCAKuvU6zaqJJHSBFIyz9RgiYNVF9sLEFFMOptFwkeWJWq1
+      OqauImIFz7HRzQQoEoiI5sEuumnS7XTx/BBN//2Mr3DX1gECp8P81XUmjxwhn0ndjSz7/IHx
+      9qlfo6XKpGWX9UYXuV1j9JHPMzNauDcDY4k4Yu7CJR577JGbfut1uywuLfHE448DoFlpHn/0
+      4dvmFQUOV5a3ePDksVsVhB/E6Hf5LeL7/nV35ttxcXaWE48/jsbhinUQBDdszfN9n9XLC4Qq
+      HDnxKMkPIaLTPmCrGXNsonR7Ge0Ws5eWefyxR2jsrePqg0yWsndeyHsIfR9Z0647z3W7XZKp
+      1Dsr1UJgd+os7zR55OSHO9wiDj3OnZ3l+KNPErZ2qboGxyZvX7f3IgT4jo2jhMRxhHztmCnb
+      tmk0GtRqNQzDIAxDoii64bNpmvi+TxzHN3y2LOt6BJB3f04kEtjXnBgtyzr0IpAkTNO8/tkw
+      jJt7gKBbZXalhhL2QJJo1ypkiiNowkFN5BEipnGwj2Ykcf0ulpFCjm26nkDRLdKGwdSJY3jt
+      Gosbeyixj26l0OWIli146pFp5uavIkR0uFfYsDAlh+V9m2JKI45j3AB0TSY/kOfSlRWKuQT5
+      TI5UcZjJkSGc9gEXrqyCkFAUiZ2DFt964TlOv/kWViYLgUMcB+zWQ8bKOXzHIZXJcnlpgz/5
+      9gssXJoj7HYItQT1pks6rZBIpkkqHks7LgnJRTVSxDK0GhVyRgYjo+OEUCgMMj4+zsL5s4QC
+      NMMiqUEviLHbHQxdwlfSPPPYceZmz1HvOqTzwxi4RFFE1/Upj00xlJJYWFpHFR5x9gijWp1L
+      Gw3CCEbKg6xt7vHNP/oaF86fRwJUEZMuFtmtNMiaUG27YNcpTj9B0jugp6Wob23Q8wKGykNs
+      bFf53h8/z9yFOdxeBz2Z54lHH8Lr1fjlq3OoosPo2BGWl5b54te/jV1dp+tL4DWIYp3YTBM1
+      NokSJR6ZHmJu/iqGKVFt6zx9Ms9rZy4jIzE+NsrV5TVe+OY3Serv7xEYBocBkCUEkQBEdLiX
+      XJLuoR5AyCxfWaA8nKPbtkmlDMIwoLK1SpxyeOjkNJsbPgnPJTZMwiCg07MZKw9T6fi0DzbZ
+      HxqBVpXVtTVyiQSICmY6h4SK22sTSDpm3GZnp0o2nyPwPYTv0XHT+M0KkXK4f3Zrp0p5YoLG
+      /hZHRkrMLyyQS1pks0Wc9hy271MqZCmPjAASzXabRm0f2RqgmFPQFZXttQXMgWni2j6jo6MI
+      oF3ZwglkbL9NqFgkLR3X7tJ0bOQwZnt/g0DOUcgbCMPCcTr0QpljDz/K2toeJ2eOUq/XiISE
+      EBGqZpJMJbC9gCgMGZ06gtdr0uoFdNs1UtkSB60OaUOi5wQ4tk3d6RBGEZ7nky6oJFIp4mAf
+      IWLmLixw/MEHARm706JjOyiBw0HPZX+vymBOJZEv0WoqHEsZtGsdlGKGnc1VtPwRatUqIyOj
+      AOxubxMDUrMLjz6EbiXRJZ9AqCzOnyU1chKNmGq1RqE8zvLaPG5o0gs2ySc0Zsaz9JpVnFAQ
+      dnuoagkzkUKKfISsMn/hAsNTJ5DuwJJWtXd6VuU2ze+T5mZnuDgmCENkSSJGQiaGa85wiqIQ
+      RjEiFsgSyIpCLEBGEAuBQEJGoKgaIg4JI4EQh/OZsiwjywqKIuN7HqqmEoYxiiIBEkJAHIeH
+      zmfXzouSrzm+IWJUTSOOIrq2Qz6XvXbEkoQsgR9G6Jp2Lcb84TVF04jC4HAATYyqaoRhhK7r
+      hIF/GJMoDFFVlTCKUGUJgYwQEXEsrgfVkmUZIQ6/t+pV1ESWQi6F53rXZz8URQZJJooiNEUm
+      RkZT5MNTJCWQJAUhIvxunbNX93n26ceQJIHvB8jXytXUw/RC/LZM0I1DWUFGiBhZkoiEYH72
+      bRIDI0xNlFFUHREF18uX5UMnxiiK0XUdz3tnetg0zWtmnk8cCyRJBhGjGyYiDgkigcSh46IQ
+      h/8xsoIiH/5niqIQCYGuafi+9y5ZBbpufKwNSZ9WD4B4D4HTFlu71fdevgWx2N3eEMvLy2Jp
+      cUHY/o2/VnY2xPp25Q7yEaLdqAs3CN+RweuJja29G9Lsb26Irhd8YF5rq2sivsV1p10Te9X2
+      be/rdDoijnyxvr4thIjF9tqS2D1o3JAmjiOxsrp22zxC3xbrm7u3zf/9vn8UatUDEce3qu07
+      VHfWRLPdFbYXCSGEWF9ZEaEQYnXt9vW4LXEkOt3eR5D0g+n1fjf5fhA39UGSIrG5usTe5ip2
+      r4Pv+0w++BBex0aOXEaOHCd7LcSHIsH23j560KbaE0yPDVBv2cxMjvDGW2d59JGHWVzu4vfa
+      CFlFU2RkzSSXUGj1PGwv4KEHjrO2ucvDD+e4cvkyMRLpjMbl80sgHqHVqDI+dQK7ccBipcFU
+      KU+z6yDCmFwujddrkR6aRI+6bOy36DZrOE6bVCpH2/awZB8tWaB7sMzmQcyJk5NoZpaoXaHu
+      +gykk9g+GCrUKx4be21GhjK8NXuFxx6eYaXToNPucOKBB3jt5ZeQVJlYgBp7WPlh0mrETr1N
+      HPjIUszS1TWi0CMMBemETLvn4TgeiaRFtLEGqs7m+gbTM8dp1vbxIhnP7pAeKFMuJJibv0om
+      k8QLYkQUkM/laLTaKLJMJm1R2a9iWhapbBaNgMW1kHJWYXW3hikFJNI5OrbHA8en2VxbpFs9
+      IM5LDGYTzC4tYfdsml5Ap1Fla22JRCpPabhEYWiYjZUrRLF0OGYTLiEq7XaXgXwaoViMFFPs
+      7+2x0utRGjtCaSDzSb+v7zo3K4AsEfku3VqVJgXGcylWrs6TsIrEsccD1+PbSBQKBbSdOgMJ
+      qNoNXvnNKuMTY8iqxuDQIJs7u2iqcmgeCXE4MyFJLFcP7fFenEQVHn50rdv2e+zs1xg7NkM6
+      l+bcr19m+jNPsriyxZAkI7s9thsqu+sbTI4UUWWTNy8s88TTOZJKyNryIrl8gWqjQ/OgQmjm
+      KSRkzr/9Dxx97PMk0hHzc5d5/o9fYGFxDjWfYKMm0djbJJeyUHQdEYYouklpMMfWXg2VAKEm
+      MXWNZCpBKBT2tlY4qDV55PEkqh6wtr1HQo5wel3SuQG21xexPYVEJsVnHppm9tIWvc4eURRj
+      JkwSCYOd7XWEUNHUkFgotLtrDGWmqW1tsm2ZFFMpBjIp9loumt9jt1JjcmaGbn0HUT7G5uIG
+      z3/5CXZml3CNLGsrV8lmBzAO9omsAgLYXltBlnVUeZ/lmkbXFWRSFt1GjVCSMIwEIwMmy/tt
+      RkZGOKg2D9dZGlVCoaEKD6El2Z5dZvL4w0jFJDs728iKSuvyBZyJKY6Mlz/ZFnuXuWkM4Ntt
+      tip1pChCN63DsHqqSrvrEAUuUzMzdFst0tksXrfJZqVNxhC0eh6pVIpY1hgpZrmyuEShkCdC
+      pdfrohLhX/NvyKSTxAL8WOHIWIkrly9z9NhJhN/DCSJELDg4OEDVDEQUMH5kinZ1h3rbRlFU
+      VMNkMJtEMpLUdjYYKI8T2S0OWg6x7xAB46PDVOo9VEI0Q8ftddD0JD3PZ2Zqkrdf/AXS6BST
+      WQs3Ase2SZkaipWmkDZYWN1hMGMiaybtnsf0kTH2d3dodbogySQMldzgCBoh1WYbOQ6QdYvI
+      7ZHM5Wk1O6Qtla7rE0YSwu8xOzvHM19+HiVyaHdd0kkDSTNoNRoomsnk6CCbW7v4QYAkSWiq
+      hJkukbcEXiSQVZ1aZQ9Z0YkEWJKLmhvDFD0q9R5h4DJ2rd6TY8PsbW0QSRKu69OsHbBbbTAx
+      MYllHM62ZbNZ4jhCKAajpQJLV5cOxzWSRCZpoGgW7Z5HzpIRRpqsAcvr28iyjJHMMDl694If
+      3NcbYg4HytLvPMpCHIUISUGRJcIgQFKU32lUuBsQAj8I0DT9jgeLYXg48fDe5xKFhwdlH65e
+      y3e0Gy2OI4IgQjf0G9KHYYCiaJ9oRI1bcc9tiDn761ep212C90Qgi/wep07PEUc+9Ub7Awuw
+      u00unjnFZq2L79rXe4F389vtl7/ldg5hb/3mjRscr+xel/h9N+RGdLuHTmqB3aTjgSIflqNq
+      Gl6rTs91sD/CMa8fGklC1++88QOoqnrLl4KiqsiSdDjjc4d5ybKC8Z7Gf1jGp9/4P01u6gF6
+      1Q3OLO5jhCFCD2m3QyJiUpag5cgUEiroGR6ZKfLyby6QySRJDZQpyG2W9zuEAvL5AdYWzvPw
+      M1+H+lV2WxG265FMWViajpoe5PHpIX720m/IWCpNL0YKI3RN4ej0FNvbOyQNmWQiydnz8zz/
+      nT+jsbnA1l4LSQOVEKfnYiaTEEWEKOTTFluVOn/yrW/w4kuvYDsBR8sJqg0f2/WIogAtMUDl
+      YIeBgTyf/9zn2Z4/TUfRsHsefiDQNQkrlWF7t8Y/+bNv933FP0HumR5A1Uw0TSOOPQI/IhYx
+      hioh1CTHpiZBkg43sqdyFAcygEwum6IwVEISEZl8kcDpMToxRTGbpFgqg4hJmDq+62HligR2
+      C2SdgYyFlkgzMzVJJjfAZx49gWymkOIISVJJpJJMzRwjcc1FQtcUMqkEQlIxkzkylsb/396d
+      /cZ13Qcc/547d/adM+RwSFESSYmirM1yrTiGU8dNGjcJgtatU6QN0qJAX4qi/0HzWjRoH5oU
+      adCiBZK06EPjpEHsOnbSWpbt2JK1UKJkiRL3fZ19n7lz7+kDbTmyxqIkk3OH5P08SbNwfpTm
+      d89yf+ccXQpUZf1AjHCkExSVvfF29sTbCMX2oes6bq8Xj89PMOBhcGAQt9OJPxCkI96Fw6ai
+      6xKPy45qU6nXJYcGGpRrWHaklhgDbIbJ0RsId4j9e+LWyejb0K4eBFssLdMFslh2EysBLLua
+      lQCWXc1KAMuuZn5BtmXXOH/2DKo3TtBWYTpdJDs/ydNffp5owG1aTFYCWJpiYW4WrS6hVqFi
+      05BScuhAL/PLCTxqZNMPNb9f1jSopWkMw1i/kYpcP7Twg1qmlloSabFsEeV24aFomfojaxBs
+      2dWsBLDsalYCWHY1KwEsu5qVAJZdzUoAy652RwJIo8KLL7zACy+8wMjU4vpj0iCdydx+zdL4
+      dSaXMuuPpz98fHTkJnqTgrZYNstdN8L04jIvvjHObx7v5JXX36G7u4s33jrPH/3h73Hh0hWO
+      9nVjiz/CwZDGt/7x+zz95EkSBQPFqNMddTG5kKCvt5fZpQzP/8FXcFhtjOU+tNx6gNmJm0S7
+      97OWydPVEeXW1YtcHrrASrqIbhi4/BG6uzqolfM8+dnP4xAG6VSaeCzMaqZMcnGKdP7jT4mx
+      WFrB3XuD6jWS2TKRkJfJiSm69/eRWJzB4fZSKBQJhUII1Uk44GFxbgZpcxBpj1HIpLj0q9eI
+      PfIpDu1pZ2ElSV/vfpQWueNnaW3WkkjLrtZyXSCLZTewEuBBSMnywgyJdJZi6YNTISWpxBrp
+      7P2f7mhpHVY16AMxmJubR4g5siVJsVKmw2/nwjvXOfbUE2i5ZXRbALsoEOwc4PFj1v5Crc5K
+      gAcgEfh8fjQpcRZXKKkuApEojxwq4lAVwrE4mq5iCA+d7WGzw205hmEghGD9yBJAGndti9ls
+      1iDY0jTn3zmDzRvjcF8H54dHkNkk8WNPMri3Y3suiCmXy6YtZbO0lg9Ob1TVxl+ppfk5arqB
+      S9dQnF48Djul91uDUqm0PZdEmpG1kzevcn1mkcziKs99/esU5q5ycaJIYn6Sw0cPkCvDs888
+      1dSYLKBp2vtnhTk2fnED1jToffL6AiTmZ0HLcnM2xdCld0nkKuzr3UfE66a7u8fsEG+TusZr
+      r77MSirHuXcvUs6u8uLLv2BxZowr127w0os/p9CMrdlNISnkc1SqmtmB3NO2GwS73W4+/6Xn
+      KKbXcKtFTn71z8kXyiiorC5M4Nrkw7Y/EUUl3ubhv/7zP1jNawz0fIWpW+8RbfOxuJIgOTXO
+      2OIpTva2mx3pFjB4+cf/TcfgEX7ryVNmB/OxNvy2SCmZnZ4mGPKTLWoE/W6QglDo4U8z/yQC
+      kRgBQMaj1LUKlfwawUAMRVEJBo+bEtPHMuokChpf+8afUUgtspLIc+TE45w4+gjRaIIZn5/D
+      eyJmR7klSrk0gY4OwoGQ2aHc08aXS2lQTM4zOrd+9teb//sSv/3cNwgYRtMGLlJKDKNOMbtI
+      ZmWMXHKKbGKSUnYZKQ0cLj/h2CHCnYNE95zA7Yuun4FrMmGz8/TnngUgFj6IlJLD70/5DfjD
+      DBzcufcJPIEQVPMk7uMUITNtOAiWRp33hi4i3esnuntcdmx2D/t64lSrVQKBzT8q0zB0auUc
+      mdUxsmvjZBOTFDMLaLUSis3+sfPGUkoMXcMTiBGODdAWP0qk6wh2p6/pc81SSqShUymm1n+H
+      5BT51Cx7Bp4h3vdkU2Npho8OgqulPLfGp9Cxc/L44Q3fvy2L4TYjaCklulYhl5pZ/6KsTZJN
+      TFItZ1AU2ye6kkvDACS+cA/hzkEiXUcJxwZQbI5NTQgpJVIa1Mq521/27NoEhcw8tXIem/rh
+      5wmhcOpL38Tf1jqD9c3w0QSYeO8aK5kMvUceJR72b/j+XZEA61fFOuVCktTyCLnEJLnkDMXs
+      ItKoo9jsDxvKfTGMOopiJ9RxkFBsgI69j+ENxlGUBxs4S2mga1Vyyenb3bHM6jjVUhrFpm6Y
+      tC5vhE99+ZvYnb5P8uu0lI8mQCGbYm5xBV8wQk9Xx4bv3/EJMD96huWpd8mnZtGqhXt2ZZrh
+      g3GFwxVY7y51PkJ7zwmcnvAdX2ApJXq9SjG7RHp5hFxymnx6jlJuBZAPnDwf/Mxo93FOPPNX
+      iGYd07rF7r4PIBm9fg3haeNg754N37/jE+DSL/+ezOrow37UlltPCA2Pv5O2+GG8wTj51Bz5
+      1Ayl3Ap6vYpNfbibPA0/zzA48NhX2XfkizviTLOPJkAutcL5oev0Hhigf3/rJkDTJs3XVrO8
+      c2kGu1Zj/+A+FicXCLeHmJxcJd4VpFSDTx3ZvJPHH5QQApvNQbWUYmni7bue38wvP4BQFMYv
+      /4RAZB9t8Uc29We3AlUV5HMFqrXWvhHWtPbX4bRTKlQJeO0k0mX8fidTC1mi7X5iITe5fHnj
+      H7KFZmZWOTc8xyuv3aJswLUrE8yslXjt3WnOnp/gvcnUpn+mEIJrb/0LlVJ603+22TyBCGGv
+      jZp+98HoraRpCeByqjx2vIdIR5i4TyEcCXDqeBeHettxOe38xtHuZoXSkMftIJev4HNKEvk6
+      QY8dw+ZAxUARktVUcUs+t14rcfWN72HorX2lfHAKdhWWltfMDuSemtYFcrocxMJuoMFpIO6t
+      nf25Hy6Xg1OP7qWYr2DXKoT3diJVG9Gj3WjVGm6fd8s+O5eYZOzSCwyc+uMdMR5YpyMVD92x
+      NrMDuacWKpwxlz+wPgAL+5x3PO5UneB1NnrLphFCYe7WawTb++nsfWJLP6tZpBT4fB5cbvOO
+      P7ofO2MObgcQQmHk3A8pZBbMDmVTLE2OoysO1pJJs0O5pw0TQBp1hi+dZ2Jqilvjk0xMjDG/
+      uNqM2HYdQ9cYPvNd6jVzJwQ2gzfgRzd0IqEPi+ESKwtkCmWkoZNKpZmZHCVfqpkY5f20AMJG
+      yKNyZWSabGKZs2+9gXB6KJfLaNpOG7iZr5xf48bZHyBla8+ebCTYHqe3J06sY73Uu1qpMD03
+      z/jNW1RKWa7duMnS/AKFcgVd101bEXYf1aA6Zd3Op08MoOmwt7cfqRVxu2PWcsgtIIRgdeYi
+      syN97D387DYeFOtcvniZsqHw7BefpZjP4nE6sHvCCIeXeEcEo1ygptVNvZBumABCURk8eqwZ
+      sVjeJxSF8aEfE4j2Eu4YMDuch1LI5vD4fXR17sVlt+FujxFtj91+fmDgzt+rVCo1O0TAGgS3
+      tGtvfI9qKbPxC1uQancQDAbwul0t3YpZCdDCtGqRq2/+M4ax/dYNz47eoipsZoexISsBWlx2
+      bYzxoZ9su/FW574+Tp44Qe/eLrNDuScrAVqcEAqzI79kbXbI7FAeSCAcpvWv/w0TQFKvr4/M
+      jW121dmphFC4cfb7FLNLZoey4zRsAW6cf4vTb5xmYn7nVSluV3q9ytUz/4Rer5odyo7SIAEE
+      Bw4fZnlhhXBo6wrALA+umFtm5Ny/b/ubZK2kYReoVCgQi8eoVMy9TW25kxCC5cmzzN08bXYo
+      O0bDLlAxX8DpCeBxqUgpKRYK1GpViqX18gerBMI8QrExNvQjsmuTZoeyIzTsAkVi7eSSa9Tq
+      EmSd6ZvD/PwXr3NzbIKf/uRHLCXzzY/U8iEpGT7zXarlrNmRbHsNW4BKsURdGkh9fXOnhUSB
+      Y0cOUsxl6O7uJpfNWMVwJqtVclz/1b9iGNbx5J9Eg1ogyfTiKv39g8Sj64PgZ7/4OwD09/Xf
+      +UprmtQ0QghSyyNMXPkpB04+39LlBq2sYQvg9/uplfNki9aUWysTQmHmvVdIzA+bHcq21XAM
+      sLdnD0IR1hV+GxCKwvW3/41ccsbsULalhtOg0+Oj6EK1mtVtQq9XufTLvyO5dMPsULadj1kP
+      oGDoFSpVjeAWLwi3bEzWNd6+MI3d56WiGTzW4+bMWJGIrYphc1As1njqqX6unP4Og098g67+
+      z7TkxWt1cQ7VF0HViyTzGja9RLR7Px4TDzVp2AWKhgNkcmVsNqtWrhVIIZCKjVibm0q5Sg0V
+      rVAgV9GpVGs43Q5cigBpMHL2B0xde6nl7hYXC3lmFheYHB3F4fKQTi2wND3D6NTS7W0VzdAw
+      9Vx+P6XsdXRrCNAiBP37I3g9Tp58tIdqucbTp/bjsgsMBPlCDd6/4Auhx1IgiwAABHZJREFU
+      MDn8M8qFBIef+FMUW2vsfFOv1/G73dg9bSzMTuPwRLFpdeKxNlPHmo3/dSS0tYXQ6611Fdmt
+      FJuNrtivHUnlvXOf0oDPdcffhVBYmnibainDsaf/Aruj+ZvOflQwFCYY+ujh4b23/1Svm7Po
+      p2Efp14psZLI0ILdSMt9EkIhtXSDi69+i0px8/c13SkaJoBWq+EPhrGr1hhgOxNCUMotceGV
+      vyGfnjM7nJbUsAsU2T/I5+K9uNxuDEPjvaHL4PKh2u0oUsMbiNDTFWv0VksLqlVyXHz1Wxz/
+      7F8S6TpidjgtpeF9gOGhdzn96v8ws5xHCJVA0E8ymyOfXmXowjmE3WXVAm0zhl7jyunvsDD+
+      ltmhtJQGLYBgYOAwkVgP3TE/0qiRK9Y41NuDLm30HTiElDXc7qB1p3jbkYyc/QGVQpK+E7/b
+      EkfJmq1hF6hWyLCWKhCOdhDwODn+6Ilmx2XZIkIoTF17iUop1VLTpGZpeAmw2VRy6TUKRauL
+      sxN9ME16+fQ/oNXM2ZGtVTRMAMXuQKtpOJ3bYWMLy8MQQiG9fIuzP/trkovXzQ7HNA0TQEqD
+      ULQTn3tzD4aztBYhBFq1wJXT32Zh7E2zwzFFw1mg8alZAk6NleTubh53k5FzP2Ri+GctV0O0
+      1Rq2AAG/l2LZIBR0NXrasgMJoTA1/CI33vk+hr799iJ9WA2rQXv7+vF4/bjs1hhgNxGKwtLk
+      O1w+/W3qu2Rw3LAFSM5Ps7iywMXhsWbHYzHZ+uD4Jhde/dtdUUPUeGOsWh1VdXPoYE/zI7KY
+      TghBMbteQ7TTt2JseBfE7fUTrBioNhtIydLiIg6HQr4qcTtsCKHS0R5pdqyWJhJCUCmlMXQN
+      m7pzVwU23Bbl1ugYwWjH7Udujdwkvq+LUrHGm0Pn+MLv/wmapqHr1p4025mUBi+/PkabRxDu
+      6iBqq/Lzq2l6fKDabYwuV3j6a5v3ecvz06i+KHa9xFq+iqjl6dhzAL/HvOn2hrVAR08+Tlvb
+      h4sXevt6cbjt1GoFPvPMF6hkkwh/vCXXnVrunxAKfq+deMzH6HwK6VOw20C1wfJqAZfqomLA
+      Zlz/M+kUc8srCDIcOzpAfn4JvZjFHujEqfpaa0nkxNUhhlUXj518nKDXyb6+PgDi8TtfpyhW
+      MdV29+mTe8EwiHWGKVc0vtKvogqJ3aFSKtfwbNJ/sd1uJ+zzYnOHmZ+ZxuHxYxMGqmoz9ULa
+      sAXo693D2RvjJLMVa1eIHc75azsyeFz2O57zezeva+L1+TkwePT9v3Xf9bxZpfUNW4C2nn5O
+      uUJE2wPNjsdiaaqGg+CbV4ZIVDWk6qUz4mt+VBZLkzTeHj3oJZkuWPsCWXa8ht9wVzCMQ2rU
+      6tY0p2Vna5gAdqebeGcHNsWqBbLsbA0ToFrIkS9X0fXdVRpr2X0a1gLlqzW0Yh6Hy1oQY9nZ
+      GrYAa2tpevd3U8jtjpJYy+7V8EbYkaNHyBartEdCICWv/99rROMR8oUaudQag8dPsX+PtTGW
+      Zfv7f1MCB9qrzk2OAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
